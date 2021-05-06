@@ -17,20 +17,22 @@
         {% endif %}
 
 
+
+
         {% for key,value in crypto.DISPLAY.items %}
 
             <div class="container">
-            <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="p-2 mb-8 bg-light rounded-3">
                 <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">{{ key }}</h1><br><br>
+                    <h1 class="display-5 fw-bold">{{ key }}</h1><br>
                     <strong>Price </strong>:{{ value.USD.PRICE }}<br>
                     <strong>Daily High </strong>:{{ value.USD.HIGHDAY }}<br>
                     <strong>Daily Low </strong>:{{ value.USD.LOWDAY }}<br>
                     <strong>Market Cap </strong>:{{ value.USD.MKTCAP }}<br>
                     <strong>Updated </strong>:{{ value.USD.LASTUPDATE }}<br>
+
                 </div>
             </div>
-            <br><br>
         {% endfor %}
     {% endif %}
 <br><br>

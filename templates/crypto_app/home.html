@@ -5,10 +5,10 @@
 
 
      <div class="container">
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="p-4 mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Crypto News Network</h1>
-                <p class="col-md-8 fs-4">News Online..</p>
+                <h1 class="display-5 fw-bold">Crypto News</h1>
+                <p class="col-md-8 fs-4">online streaming..</p>
             </div>
         </div>
 
@@ -40,10 +40,6 @@
 
     </table>
 
-
-
-
-
         <div class="container">
             <div class="row">
                 {% for x in api.Data %}
@@ -53,7 +49,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ x.title }}</h5>
                                 <p class="card-text">{{ x.body }}</p>
-                                <a href="{{ x.url }}" class="btn btn-secondary">Read more..</a>
+                                <a href="{{ x.url }}" aria-current="page" class="btn btn-secondary">Read more..</a>
                             </div>
                         </div>
                         <br>
