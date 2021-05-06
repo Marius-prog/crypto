@@ -1,7 +1,6 @@
 from django.shortcuts import render
-import requests
-import json
 
+<<<<<<< HEAD
 
 def home(request):
     # crypto prices
@@ -36,3 +35,6 @@ def prices(request):
     else:
         notfound = 'Enter the crypto currency symbol into the form above..'
         return render(request, 'crypto_app/prices.html', {'notfound': notfound})
+=======
+# Create your views here.
+>>>>>>> 120c0f35f9684e16bee3133719dcdacd961b4f9b
